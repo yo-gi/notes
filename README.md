@@ -10,16 +10,18 @@
 
 ---
 
-# Tuesday Nov 25 2025
+# Wednesday Nov 26 2025
 
-## Oncall
-- [ ] Investigate CPU/memory
+- [x] Review rodrigo pr
+- [ ] Gemini results for checkbox majority voting
+- [ ] Move to new website
+- [ ] Propose new website structure for /customers page
 - [ ] Respond to David
-- [ ] OpenAI run evals
-- [ ] Gemini results for checkbox majority voting...
+- [ ] Investigate CPU/memory -- can we make this scaling better
+- [ ] Gemini results for checkbox majority voting... -- work with Tristan to roll out specific rules
 - [ ] Pass entity ids and model names and whatnot from backend to frontend - initial message - can this be a control message?
 - [ ] voice x main agent - support extraction -- setup with the previous.... - just expose all tool calls?
-- [ ] Verify caching for demos
+- [ ] Caching taking 18 seconds to execute....
 - [ ] Mark good runs / star or pin tasks and agents
 - [ ] “Terminal status: [Dropdown, default Success]”
 - [ ] Read email tool not showing relevant output even if it succeeds
@@ -27,7 +29,27 @@
 - [ ] Confusion around what was published
 - [ ] Confusion around which version was live
 - [ ] Diff view / revert button for flow changes
-- [ ] Alert on more than X failed runs in x minutes?
+
+# Tuesday Nov 25 2025
+
+- Zurich na demo help
+- Prudential scrolling virtualization
+
+- [x] Website meeting with chris
+- [x] make Ryze image logo thing
+- [x] OpenAI run evals
+  Did this for a bit .. okay . Lesson learned, save this work in a PR so you don't have to recreate it....
+  Need to timebox it because it takes up a lot of time. Just send some results to Luke and lets move on
+- [x] Verify caching for demos -- seems fine?
+  One issue: changing steps can change the extraction cache logic
+
+## Chris site feedback
+- More CTAs on product page
+- Represent the paper ai diagram slide on the website
+
+Lots of random conversation from first principles
+Should just have DRIs that over time will become engineering managers or tech leads or whatever we want to call it
+Some resetting of cultural goals - the most important thing is to keep the customer happy
 
 # Monday Nov 24 2025
 
@@ -73,6 +95,12 @@ Complex rules can involve calculations and photo rules..
 
 Lots of random stuff to do... rough order of priorities is to handle all the voice stuff first
 and then focus on other stuff.
+
+## Jack Adolfson
+
+- Big holdback - lack of structure - not a 
+pros: grit, creativity, process, build up
+cons: bad demo, bad structure
 
 # Friday Nov 21 2025
 
