@@ -10,10 +10,39 @@
 
 ---
 
+# Thursday Nov 27 2025
+
+
+
+# Reflection
+
+I'm not convinced that we're much more productive than if just me and Eric were working
+Everyone else is almost just barely net positive - there's a lot of everyone trying to be an FDE
+- is this true? do i actually believe this?
+
+After being on a few of these mid market calls - I think the high level takeaway of what I think we need to close mid market
+- Keep the workflows aggressively simple. 4 instructions of 4 words each. "read the email, extract the documents, upload to guidewire"
+- Show how we can deliver complex edge cases - on one of the calls the customer got really excited when I mentioned something (dry logs for water mitigation) that showed I really understood the workflow.
+- If we could have then shown that in the product I think that would have landed really well.
+
+I think a lot of product lines would have benefited from me scaffolding them out ahead of time
+Ex: w/ voice some bad decisions made (ex: transient agents, weird integrations w/ agent loop) that if we got ahead of would have saved us a few days of work
+- I think its hard to do via review close to demo because 
+- I think we can get ahead of some of these future requests by looking at near term roadmap (1-2 months) and me scoping out the initial architecture and experiments
+
+There's a loose fear that if we had to build extraction today we might not even be able to do it lol
+
+Loose thoughts on the state of me and the company
+Lots of random conversation from first principles
+Should just have DRIs that over time will become engineering managers or tech leads or whatever we want to call it
+Some resetting of cultural goals - the most important things are to (1) deliver value to existing customers and (2) close new business
+
+I don't think 
+
 # Wednesday Nov 26 2025
 
 - [x] Review rodrigo pr
-- [ ] Gemini results for checkbox majority voting
+- [x] Verify Gemini results for checkbox majority voting - sent note in intelligence
 - [ ] Move to new website
 - [ ] Propose new website structure for /customers page
 - [ ] Respond to David
