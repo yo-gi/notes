@@ -4,8 +4,8 @@ life
   carrier
   mga
   broker
-annuity
 p&c
+annuity
 group benefits
 
 

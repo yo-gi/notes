@@ -12,7 +12,18 @@
 
 # Thursday Nov 27 2025
 
-
+- [ ] Propose new website structure for /customers page
+- [ ] Respond to David
+- [ ] Investigate CPU/memory -- can we make this scaling better
+**Demo work**
+- [ ] Caching taking 18 seconds to execute....
+- [ ] Mark good runs / star or pin tasks and agents
+- [ ] “Terminal status: [Dropdown, default Success]”
+- [ ] Read email tool not showing relevant output even if it succeeds
+- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
+- [ ] Confusion around what was published
+- [ ] Confusion around which version was live
+- [ ] Diff view / revert button for flow changes
 
 # Reflection
 
@@ -37,27 +48,28 @@ Lots of random conversation from first principles
 Should just have DRIs that over time will become engineering managers or tech leads or whatever we want to call it
 Some resetting of cultural goals - the most important things are to (1) deliver value to existing customers and (2) close new business
 
-I don't think 
+I think, candidly, it feels like I've been wasting a lot of time over the last month.
+Why don't we wrap up this mid-market product stuff, and then see where I can drive unique value?
+- It seems like they've actually got it.
+- We just need to keep the demos and the sop simple.
+- We need to focus the demo on the outcome.
+
+Let's carve out a specific talk track for a mid-market demo and for an enterprise demo.
+- Mid-market focuses on outcomes, simplicity, ease of use, templates, and people working with the product easily via email and integrations
+- Enterprise focuses on reliability, API access, power accuracy, repeatability, and scale.
+
+I think there's a few paths forward for me [don't say this]
+I think overall I've been letting the work drive me instead of actually driving the work forward.
+I'd love to stay close to the customer and do specific customer stuff.
+One thing is I'm definitely doing a lot of stuff that is not stuff that uniquely I can do. It's stuff that really anyone or codex can just knock out.
+I'd prefer to just hand all of that off to someone else and drive forward on big needle movers.
+I also need to spend some time guiding other workflows (ex: voice) because they're starting to set up bad foundations that are going to bite us in the near future.
 
 # Wednesday Nov 26 2025
 
 - [x] Review rodrigo pr
 - [x] Verify Gemini results for checkbox majority voting - sent note in intelligence
-- [ ] Move to new website
-- [ ] Propose new website structure for /customers page
-- [ ] Respond to David
-- [ ] Investigate CPU/memory -- can we make this scaling better
-- [ ] Gemini results for checkbox majority voting... -- work with Tristan to roll out specific rules
-- [ ] Pass entity ids and model names and whatnot from backend to frontend - initial message - can this be a control message?
-- [ ] voice x main agent - support extraction -- setup with the previous.... - just expose all tool calls?
-- [ ] Caching taking 18 seconds to execute....
-- [ ] Mark good runs / star or pin tasks and agents
-- [ ] “Terminal status: [Dropdown, default Success]”
-- [ ] Read email tool not showing relevant output even if it succeeds
-- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
-- [ ] Confusion around what was published
-- [ ] Confusion around which version was live
-- [ ] Diff view / revert button for flow changes
+- [x] Gemini results for checkbox majority voting... -- work with Tristan to roll out specific rules
 
 # Tuesday Nov 25 2025
 
