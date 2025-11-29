@@ -10,11 +10,15 @@
 
 ---
 
+# Friday Nov 28 2025
+- [ ] Prototype multiplayer
+- [ ] Debug cpu / memory issue (Kim's repro)
+
 # Thursday Nov 27 2025
 
 - [ ] Propose new website structure for /customers page
 - [ ] Respond to David
-- [ ] Investigate CPU/memory -- can we make this scaling better
+
 **Demo work**
 - [ ] Caching taking 18 seconds to execute....
 - [ ] Mark good runs / star or pin tasks and agents
