@@ -10,14 +10,9 @@
 
 ---
 
-# Friday Nov 28 2025
-- [ ] Prototype multiplayer
+# Tuesday Dec 2 2025
+
 - [ ] Debug cpu / memory issue (Kim's repro)
-
-# Thursday Nov 27 2025
-
-- [ ] Propose new website structure for /customers page
-- [ ] Respond to David
 
 **Demo work**
 - [ ] Caching taking 18 seconds to execute....
@@ -28,6 +23,38 @@
 - [ ] Confusion around what was published
 - [ ] Confusion around which version was live
 - [ ] Diff view / revert button for flow changes
+
+At RYZE, AI isn’t just a tool — it’s a strategic enabler. Partnering with Pace allowed us to reimagine how quality assurance is done, creating a process that’s faster, smarter, and more consistent across every claim.
+Walt Leddy
+CEO
+
+We’ve taken a step forward on our journey to modernize the customer acquisition process. With automated systems, our teams now have more time to focus on customer relationships, which supports Prudential’s broader goal of delivering industry-leading experiences for both clients and customers.
+Sara Atkinson
+Vice President of Customer Acquisition
+
+# Monday Dec 1 2025
+
+We should check in quickly around the productizing mid-market motion. Takeways based on past conversations..
+Quick check in re: productizing mid-market motion - dyt still think that's valuable and if I should be filling in gaps there? Seems like Yonah, Chris, Arpan et al have a decent grasp on things. Curious about ur thoughts 
+
+* Can sell past use cases: focusing mostly on voice and claims QA
+* I think we could sell claims qa repeatably and I think Arpan could do it
+  * Over the last month seems they're doing much better on the demo
+  * Library of use cases so we can reference what other customers are doing
+    * In the call we have an opportunity to impress that we really know their industry.
+      * Recently in a call, their use case was water mitigation so I mentioned some of the rules I saw in the Ryze water mitigation use case like parsing dry logs and PPD calculations and you could see them light up
+      * If we can do this every call, and have the GTM team understand our rolodex of agents and cases we'd be able to make this much more repeatable
+    * Our demos are perhaps too simplistic (check very basic values) -- we should be checking more complex values (ex: calculator agent, photo rules, etc.)
+* There are relatively few claims QA customers - none are particularly big. 
+* How are you feeling about progress so far?
+
+- [x] Propose new website structure for /customers page
+- [x] Respond to David
+
+# Friday Nov 28 2025
+- [x] Prototype multiplayer
+
+# Thursday Nov 27 2025
 
 # Reflection
 

@@ -1,6 +1,31 @@
 # Multiplayer
 
-## plan
+## blocks plan
+- [x] add whatever block metadata is needed to nodes
+- [x] redis streams to sync updates to a node to all listeners
+- [x] on update to a node the listeners receive the new node
+- [x] attach avatar state to the collapsible wrapper
+- [x] when you update you change the version and you cannot update without being on the latest version
+- [x] sync publish state
+- [x] attach avatar state also to the editor
+- [x] check every node
+- [ ] simple fix for update race condition is like... check if this current session is making the edits then don't overwrite the local.?
+
+## for fun..
+- tiptap -> mdx..
+- fix task / run streaming
+- clean up like... the use editor state stuff
+- add alert on url spikes to datadog
+- remove intercom
+- add react query debugger
+- replace toast with sonner and add buttons
+
+## rushlight plan
+- consolidate state into string
+  - write node <> directive mapping
+  - make a functional version of each editor and bring it in
+  - external editors might also be depending on this string
+- multiplayer the string rushlight style w/ redis and lexical state...
 
 ## plan for single mdx editor
 After reflection This might work, but we still need to support many other nodes. Unless we want to converge all nodes into this one single node, we might as well just implement node- or block-level multiplayer.
