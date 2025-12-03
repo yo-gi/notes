@@ -8,11 +8,58 @@
 - [ ] Devin style "Browser" / "Voice call" tab design
 - [ ] Give quick overview on all the use cases that customers are using Pace for
 
+## Problems
+
+- [ ] Shared set of entities for child agents instead of cloned entities
+
 ---
 
 # Tuesday Dec 2 2025
 
+## Voice call evals
+
+- Agent should end at this step
+const runId = "e996c335-15b7-4c7a-ab4a-c1c9ad68203d";
+const stepIdx = 1;
+const logIdx = 0;
+
+- Agent should end at this step
+const runId = "b567b626-88d7-43a6-99dc-50e45dfb1213";
+const stepIdx = 1;
+const logIdx = 0;
+
+**Thoughts for openai meeting**
+- is anyone particularly proud of how they test and eval their agents?
+
+- Testing the agent - how do you test this thing lol?
+- Narrow down context? Top k?
+- Web agents
+- Caching
+- Voice agent architecture
+- Document understanding -- excel
+- Document editing -- pdf, excel, word
+
+durability for agent
+- has to match how the model is trained
+- model was trained on a specific "surface" (meaning their tools and and api, like apply_patch etc)
+- build on the same abstractions the model was trained on - will have to baby sit prompts less
+
+evals
+- evals and tests are almost the entire problem.... if we have evals... what do we not have....
+
+- custom tool for note taking can be good for performance.. (maybe useful for cor?)
+
+
 - [ ] Debug cpu / memory issue (Kim's repro)
+- [ ] Misc. improvement hour..?
+
+**Voice**
+- [ ] improve tool call prompting
+- [ ] voice tools return entity id
+- [ ] send entity ids to voice agent
+- [ ] more logs to prevent main agent continuing voice stuff
+- [ ] send voice agent all main agent created entities
+- [ ] reduce tool boilerplate
 
 **Demo work**
 - [ ] Caching taking 18 seconds to execute....
