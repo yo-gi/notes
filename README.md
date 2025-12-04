@@ -1,10 +1,7 @@
 # TODO
 
-## Takeaways
-- [ ] Add calculation to claim demo
-- [ ] Add photo rule to claim demo
-
 ## Ideas
+
 - [ ] Devin style "Browser" / "Voice call" tab design
 - [ ] Give quick overview on all the use cases that customers are using Pace for
 
@@ -14,7 +11,36 @@
 
 ---
 
+# Thursday Dec 4 2025
+- [ ]
+- [ ] Debug cpu / memory issue (Kim's repro)
+- [ ] Misc. improvement hour..?
+
+**Voice**
+- [ ] improve tool call prompting
+- [ ] voice tools return entity id
+- [ ] send entity ids to voice agent
+- [ ] more logs to prevent main agent continuing voice stuff
+- [ ] send voice agent all main agent created entities
+- [ ] reduce tool boilerplate
+
+**Demo work**
+- [ ] Caching taking 18 seconds to execute....
+- [ ] Mark good runs / star or pin tasks and agents
+- [ ] Read email tool not showing relevant output even if it succeeds
+- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
+- [ ] Confusion around what was published
+- [ ] Confusion around which version was live
+- [ ] Diff view / revert button for flow changes
+
+
+# Wednesday Dec 3 2025
+- [ ] Heads down on tasks.....
+- [x] Just designed all day Jesus
+
 # Tuesday Dec 2 2025
+
+Spent a bunch of time generating images for the launch.....
 
 ## Voice call evals
 
@@ -49,28 +75,6 @@ evals
 
 - custom tool for note taking can be good for performance.. (maybe useful for cor?)
 
-
-- [ ] Debug cpu / memory issue (Kim's repro)
-- [ ] Misc. improvement hour..?
-
-**Voice**
-- [ ] improve tool call prompting
-- [ ] voice tools return entity id
-- [ ] send entity ids to voice agent
-- [ ] more logs to prevent main agent continuing voice stuff
-- [ ] send voice agent all main agent created entities
-- [ ] reduce tool boilerplate
-
-**Demo work**
-- [ ] Caching taking 18 seconds to execute....
-- [ ] Mark good runs / star or pin tasks and agents
-- [ ] “Terminal status: [Dropdown, default Success]”
-- [ ] Read email tool not showing relevant output even if it succeeds
-- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
-- [ ] Confusion around what was published
-- [ ] Confusion around which version was live
-- [ ] Diff view / revert button for flow changes
-
 At RYZE, AI isn’t just a tool — it’s a strategic enabler. Partnering with Pace allowed us to reimagine how quality assurance is done, creating a process that’s faster, smarter, and more consistent across every claim.
 Walt Leddy
 CEO
@@ -80,6 +84,8 @@ Sara Atkinson
 Vice President of Customer Acquisition
 
 # Monday Dec 1 2025
+
+- [x] “Terminal status: [Dropdown, default Success]”
 
 We should check in quickly around the productizing mid-market motion. Takeways based on past conversations..
 Quick check in re: productizing mid-market motion - dyt still think that's valuable and if I should be filling in gaps there? Seems like Yonah, Chris, Arpan et al have a decent grasp on things. Curious about ur thoughts 
