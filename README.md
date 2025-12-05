@@ -11,18 +11,25 @@
 
 ---
 
+**Voice evals**
+- Can we get full call logs w/ transcript?
+
+**Voice vibe**
+- tone issues - too therapy or aggravated
+- transcription accuracy 
+- interruption for email and phone number pausing
+
 # Thursday Dec 4 2025
-- [ ]
-- [ ] Debug cpu / memory issue (Kim's repro)
-- [ ] Misc. improvement hour..?
+- [ ] Issue with multiple tabs open for multiplayer?
+- [o] Debug cpu / memory issue (Kim's repro) - if done right, big dub in CPU
 
 **Voice**
 - [ ] improve tool call prompting
 - [ ] voice tools return entity id
 - [ ] send entity ids to voice agent
-- [ ] more logs to prevent main agent continuing voice stuff
 - [ ] send voice agent all main agent created entities
 - [ ] reduce tool boilerplate
+- [x] more logs to prevent main agent continuing voice stuff
 
 **Demo work**
 - [ ] Caching taking 18 seconds to execute....
@@ -35,7 +42,7 @@
 
 
 # Wednesday Dec 3 2025
-- [ ] Heads down on tasks.....
+- [x] Heads down on tasks.....
 - [x] Just designed all day Jesus
 
 # Tuesday Dec 2 2025
