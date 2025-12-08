@@ -11,6 +11,9 @@
 
 ---
 
+# Friday Dec 5 2025
+- [x] Elliot web search
+
 **Voice evals**
 - Can we get full call logs w/ transcript?
 
