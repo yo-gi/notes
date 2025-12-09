@@ -11,6 +11,40 @@
 
 ---
 
+# Tuesday Dec 9 2025
+- [ ] Screenshots for Rob for the script
+  - [ ] Send him the specific parts of the website that we also want to backfill based on the video
+- [ ] Formula extractions / calculator extractions
+
+# Monday Dec 8 2025
+
+**Urgent**
+- [x] Deal: Canopius citations
+
+Citation improvement ideas
+* Split separately for each field
+* Pick a list of boxes. Group boxes where possible
+* Actually failed citations
+
+**Voice**
+- [ ] improve tool call prompting
+- [ ] voice tools return entity id
+- [ ] send entity ids to voice agent
+- [ ] send voice agent all main agent created entities
+- [ ] reduce tool boilerplate
+
+**Demo work**
+- [ ] Caching taking 18 seconds to execute....
+- [ ] Mark good runs / star or pin tasks and agents
+- [ ] Read email tool not showing relevant output even if it succeeds
+- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
+- [ ] Confusion around what was published
+- [ ] Confusion around which version was live
+- [ ] Diff view / revert button for flow changes
+
+**Misc**
+- [ ] Issue with multiple tabs open for multiplayer?
+
 # Friday Dec 5 2025
 - [x] Elliot web search
 
@@ -23,25 +57,8 @@
 - interruption for email and phone number pausing
 
 # Thursday Dec 4 2025
-- [ ] Issue with multiple tabs open for multiplayer?
-- [o] Debug cpu / memory issue (Kim's repro) - if done right, big dub in CPU
-
-**Voice**
-- [ ] improve tool call prompting
-- [ ] voice tools return entity id
-- [ ] send entity ids to voice agent
-- [ ] send voice agent all main agent created entities
-- [ ] reduce tool boilerplate
+- [x] Debug cpu / memory issue (Kim's repro) - if done right, big dub in CPU
 - [x] more logs to prevent main agent continuing voice stuff
-
-**Demo work**
-- [ ] Caching taking 18 seconds to execute....
-- [ ] Mark good runs / star or pin tasks and agents
-- [ ] Read email tool not showing relevant output even if it succeeds
-- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
-- [ ] Confusion around what was published
-- [ ] Confusion around which version was live
-- [ ] Diff view / revert button for flow changes
 
 
 # Wednesday Dec 3 2025
