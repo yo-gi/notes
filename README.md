@@ -16,6 +16,44 @@
   - [ ] Send him the specific parts of the website that we also want to backfill based on the video
 - [ ] Formula extractions / calculator extractions
 
+Right now in @apps/backend/src/temporal/workflows/flow-agent/orchestrate-single-extraction.ts we have this new pattern where we split one large extraction call into separate temporal activities to better spread the load out. We want to similarly split up the citations flow into smaller chunks and call them as part of separate activities. The relevant code for this and some basic guidance is in @apps/backend/src/temporal/workflows/flow-agent/orchestrate-bulk-extraction.ts and also in @apps/backend/src/temporal/flows/cite-flow-model.ts  
+
+Could you implement this split?
+
+## Capabilities
+
+Existing capabilities
+- Connecting to random APIs
+- Reasoning over 50~ pages of documents to extract simple-medium complexity results
+- Email/text back and forth - simple conversations (10~ turns)
+- Filling out templated PDFs and excel files
+- Navigating medium complexity websites
+- Web Search, deep research
+- Using our existing UI and design to show a BPO workflow
+
+New capabilities
+On the order of a few days
+- Small improvements to document understanding and reasoning
+- Generating a somewhat bespoke PDF or Word doc
+- Filling out a Word doc
+- Building a simple extension to our site with some new display type (ex: 1035 exchange history) 
+
+On the order of 1-2 weeks
+- Direct integrations with any insurance system
+- Deep investigation into 100~ pages of documents to put together a complex chain of hand offs
+- Email/text back and forth - complex conversations (40~ turns)
+- Filling out a medium complexity Excel file
+- New visualization for a single kind of workflow (ex: )
+
+On the order of a month
+- Reasoning over and filling out a complex Excel file
+- Custom view for a complex workflow that looks very different from current site
+
+On the order of 3-6 months
+- 95% reliability on complex voice calls
+- 95% reliability on complex computer use
+
+
 # Monday Dec 8 2025
 
 **Urgent**
