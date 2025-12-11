@@ -11,6 +11,25 @@
 
 ---
 
+# Wednesday Dec 10 2025
+- [ ] Surface failure reason for send email tool call
+- [ ] Roll run code tool into rest api tool
+- [ ] Agent reliability - checklist / tags something like that
+- [x] Spent half the day working on citation splitting its tough lool...
+
+- Had a good conversation with Eric on working on higher leverage things -- agent is always in a state of degradation
+- Basically RPA is in a decent spot
+- Could be cool to have a self improving agent
+- Integration of the agents and ease of use is doing to become a bigger thing over the next N months
+
+- [ ] It's insane that I don't know the answer to this question myself. why is that? it feels so wrong. I need to think of a longer time horizon and come up with the answer myself
+
+
+purchase amount: 4 items
+sell amount: 3 items
+buy price: 10$
+sell price: 40$
+
 # Tuesday Dec 9 2025
 - [ ] Screenshots for Rob for the script
   - [ ] Send him the specific parts of the website that we also want to backfill based on the video
