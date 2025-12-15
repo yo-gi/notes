@@ -9,7 +9,7 @@
 - [x] sync publish state
 - [x] attach avatar state also to the editor
 - [x] check every node
-- [ ] simple fix for update race condition is like... check if this current session is making the edits then don't overwrite the local.?
+- [x] simple fix for update race condition is like... check if this current session is making the edits then don't overwrite the local.?
 
 ## for fun..
 - tiptap -> mdx..

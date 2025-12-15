@@ -11,6 +11,19 @@
 
 ---
 
+# Thursday Dec 11 2025
+
+- [x] Send rob assets
+- [x] Anthropic and 5.2 testing...
+- [ ] Routing layer
+- [ ] Setup recurring pen test
+- [ ] Investigate agent mail
+- [ ] Renaming issue for Rahul
+
+- Agent might do better if we gave it specific milestones to "check off" - this could be interesting as an architecture thing
+- Should we build a system of record?
+- Should we build a UI layer on top of the agent for every use case that lets us knock this out of the park
+
 # Wednesday Dec 10 2025
 - [ ] Surface failure reason for send email tool call
 - [ ] Roll run code tool into rest api tool
@@ -24,11 +37,13 @@
 
 - [ ] It's insane that I don't know the answer to this question myself. why is that? it feels so wrong. I need to think of a longer time horizon and come up with the answer myself
 
+ChatGPT history with short term and long term memory architecture is kind of sick.. sliding window memory, facts memorized about a person.
 
 purchase amount: 4 items
 sell amount: 3 items
 buy price: 10$
 sell price: 40$
+
 
 # Tuesday Dec 9 2025
 - [ ] Screenshots for Rob for the script
