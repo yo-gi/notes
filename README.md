@@ -11,13 +11,47 @@
 
 ---
 
+# Tuesday Dec 16 2025
+- [x] Respond to Varun about gmail connection
+- [ ] Work on diff view for agents
+- [ ] Work on gmail integration convex
+  - Gemini thread https://gemini.google.com/app/0e7fb526dbc01ef1
+- [ ] Evaluate differences for CMV
+- [ ] Setup recurring pen test
+
+**Agent reliability**
+- [ ] Surface failure reason for send email tool call
+- [ ] Roll run code tool into rest api tool
+- [ ] Agent reliability - checklist / tags something like that
+
+**Demo work**
+- [ ] Caching taking 18 seconds to execute....
+- [ ] Mark good runs / star or pin tasks and agents
+- [ ] Read email tool not showing relevant output even if it succeeds
+- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
+- [ ] Confusion around what was published
+- [ ] Confusion around which version was live
+- [ ] Diff view / revert button for flow changes
+
+- [x] Investigate agent mail
+
+# Monday Dec 15 2025
+
+Mostly spent working on conversational agents. I think scaffold is in a good spot.
+What's interesting is we need to make sure these following customer requests get satisfied. Specifically 
+- Accelerant: New text messages coming in many hours later need to get attached to the original task. Also need the ability for new messages to get their own new threads....
+- IB&M: Multiple emails come in regarding the same Bond number. these all need to get attached somehow to the same task? Depends on what the situation is. if a task is waiting for action and we have an agent .. that needs to look things up by bond number or something like that....
+- TMG: Same email with same entity id (message id) getting forwarded multiple times and we have to either create or attach
+  - This is solved by DECOUPLING email message id from the entity id. It's kind of unrelated to the message router
+
+- [x] Finish routing layer
+
+
 # Thursday Dec 11 2025
 
 - [x] Send rob assets
 - [x] Anthropic and 5.2 testing...
-- [ ] Routing layer
-- [ ] Setup recurring pen test
-- [ ] Investigate agent mail
+
 - [ ] Renaming issue for Rahul
 
 - Agent might do better if we gave it specific milestones to "check off" - this could be interesting as an architecture thing
@@ -25,9 +59,7 @@
 - Should we build a UI layer on top of the agent for every use case that lets us knock this out of the park
 
 # Wednesday Dec 10 2025
-- [ ] Surface failure reason for send email tool call
-- [ ] Roll run code tool into rest api tool
-- [ ] Agent reliability - checklist / tags something like that
+
 - [x] Spent half the day working on citation splitting its tough lool...
 
 - Had a good conversation with Eric on working on higher leverage things -- agent is always in a state of degradation
@@ -46,9 +78,9 @@ sell price: 40$
 
 
 # Tuesday Dec 9 2025
-- [ ] Screenshots for Rob for the script
-  - [ ] Send him the specific parts of the website that we also want to backfill based on the video
-- [ ] Formula extractions / calculator extractions
+- [x] Screenshots for Rob for the script
+  - [x] Send him the specific parts of the website that we also want to backfill based on the video
+- [x] Formula extractions / calculator extractions
 
 Right now in @apps/backend/src/temporal/workflows/flow-agent/orchestrate-single-extraction.ts we have this new pattern where we split one large extraction call into separate temporal activities to better spread the load out. We want to similarly split up the citations flow into smaller chunks and call them as part of separate activities. The relevant code for this and some basic guidance is in @apps/backend/src/temporal/workflows/flow-agent/orchestrate-bulk-extraction.ts and also in @apps/backend/src/temporal/flows/cite-flow-model.ts  
 
@@ -98,21 +130,7 @@ Citation improvement ideas
 * Pick a list of boxes. Group boxes where possible
 * Actually failed citations
 
-**Voice**
-- [ ] improve tool call prompting
-- [ ] voice tools return entity id
-- [ ] send entity ids to voice agent
-- [ ] send voice agent all main agent created entities
-- [ ] reduce tool boilerplate
 
-**Demo work**
-- [ ] Caching taking 18 seconds to execute....
-- [ ] Mark good runs / star or pin tasks and agents
-- [ ] Read email tool not showing relevant output even if it succeeds
-- [ ] Unclear where we got the email body that was sent out (agent vs hard coded)
-- [ ] Confusion around what was published
-- [ ] Confusion around which version was live
-- [ ] Diff view / revert button for flow changes
 
 **Misc**
 - [ ] Issue with multiple tabs open for multiplayer?
