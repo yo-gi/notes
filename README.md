@@ -11,8 +11,12 @@
 
 ---
 
-# Tuesday Dec 16 2025
-- [x] Respond to Varun about gmail connection
+# Thursday Dec 18 2025
+
+- [ ] Merge Luis' PR for pen test
+- [x] Turn on routing for all non-accelerant orgs
+- Checkbox majority voting investigation
+
 - [ ] Work on diff view for agents
 - [ ] Work on gmail integration convex
   - Gemini thread https://gemini.google.com/app/0e7fb526dbc01ef1
@@ -33,6 +37,8 @@
 - [ ] Confusion around which version was live
 - [ ] Diff view / revert button for flow changes
 
+# Tuesday Dec 16 2025
+- [x] Respond to Varun about gmail connection
 - [x] Investigate agent mail
 
 # Monday Dec 15 2025
