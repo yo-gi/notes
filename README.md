@@ -13,9 +13,42 @@
 
 # Thursday Dec 18 2025
 
-- [ ] Merge Luis' PR for pen test
+- [ ] Write the damn blog post
+- [ ] Checkbox majority voting resolution - fix all the rules
+
+- Agent letter
+[Added "Secondary Addressee Form" to ignore these checkbox items if they appear section]
+
+- section f - insurance history
+- section c - premium
+> Note that sometimes there might be two sets of Section C across two pages. In those cases, as long as a single set satisfies the constraints below, consider it a pass. If neither set satisfies the constraints, fail.
+
+- section c - family history
+> A missing age of diagnosis is okay
+
+- section b - plan of insurance
+> 2a. If "Other" is checked, we don't need a corresponding term length checked.
+
+- Section G - General Information
+> 7a. For travel outside the US, do not fail this rule if only frequency is missing but other details are provided.
+
+- Section A. Business Information
+> MM/YY -> mo/yr
+
+- Base Rating and Table Rating
+The value of "Rate Class Table" is "@..."
+
+- Part 1 Section A Number 8
+[didn't change]
+
+- Part 2, Signatures Box, "I am not a U.S. person..." checkbox
+The proposed insured has mentioned that their state of birth is: "@Part_1_Application.Proposed_Insured_State_of_Birth"
+If the checkbox corresponding to the attached quote below is checked, then ensure that they didn't use a US state as their state of birth.
+
+- [ ] Get Luke Presberg an api trace
+- [x] Merge Luis' PR for pen test
 - [x] Turn on routing for all non-accelerant orgs
-- Checkbox majority voting investigation
+- [x] Checkbox majority voting investigation
 
 - [ ] Work on diff view for agents
 - [ ] Work on gmail integration convex
