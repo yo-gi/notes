@@ -11,10 +11,23 @@
 
 ---
 
+# Tuesday Dec 23 2025
+
+- 
+
+# Friday Dec 19 2025
+- [ ] Tell Rob about the different design checkpoints we need
+  - Checkpoint re: Solutions page
+
+Hey Rob, as we talked about during our chat we wanted to be able to use some frames and clips from the video as assets on our site and social media. Here are the different touch points we're hoping to get.
+- Hero-style clip/frame of a "multi modal" agent that can make calls, use browser, and read docs
+- A clip/frame showing how the SOP (agent instructions) map to what the agent does
+
 # Thursday Dec 18 2025
 
-- [ ] Write the damn blog post
-- [ ] Checkbox majority voting resolution - fix all the rules
+- [ ] Roadmap ...
+- [x] Write the damn blog post
+- [x] Checkbox majority voting resolution - fix all the rules
 
 - Agent letter
 [Added "Secondary Addressee Form" to ignore these checkbox items if they appear section]
