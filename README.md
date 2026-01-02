@@ -11,6 +11,29 @@
 
 ---
 
+## OUTSTANDING
+- [ ] Verify that the voice stuff works
+- [ ] Filter chunks for reporting dashboard
+- [ ] Don't break cache on nonce change
+- [ ] Actually remove the checkbox path
+
+## Do afterwards
+- [ ] Wrap up diffing
+- [ ] Research conversational agent
+
+# Tuesday Dec 30 2025
+- [x] Video feedback for Rob
+- [ ] Merge vision 
+
+# Monday Dec 29 2025
+
+There's some long tail of stuff but remember the goal grid. Let us keep that in mind.
+
+## Must do first
+- [x] Ryze before EOY - image rules
+- [x] Doc for search agent
+
+
 # Tuesday Dec 23 2025
 
 - 
