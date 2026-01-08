@@ -9,21 +9,59 @@
 
 - [ ] Shared set of entities for child agents instead of cloned entities
 
----
-
-## OUTSTANDING
-- [ ] Verify that the voice stuff works
-- [ ] Filter chunks for reporting dashboard
-- [ ] Don't break cache on nonce change
-- [ ] Actually remove the checkbox path
-
-## Do afterwards
+## Top of backlog
 - [ ] Wrap up diffing
 - [ ] Research conversational agent
+- [ ] Think about general agent harness and how we can make it more usable and self serve....
+
+---
+
+# Wednesday Jan 7 2026 (!!)
+
+Thanks! Some feedback
+- The dropdown pops up weirdly when we switch pages (see video)
+- Testimonial needs logo and link to blog post
+- A lot of the text feels a bit small and a bit disjoint from the other pages. We can make the copy shorter if that helps?
+
+Hey just catching up on everything. My current priorities -- does this line up?
+- Conversational agents
+  - Message routing
+  - Transcription improvements
+- Agents out of the box
+  - Working w/ Kim on brainstorming / coding as helpful
+- Launch
+  - Solutions page w/ David
+  - Video w/ Rob
+- Agentic search
+- Misc eng work
+
+One flag: Rob hasn't sent an updated video he said he would send Monday - real chance of missing launch deadline here I think. Since he seems to respond better to pings from you could you give him a quick bump? Parts of the website are downstream of this so very important
+
+
+
+
+Given a generic SOP wouldn't claude code be able to actually execute on it right now?
+
+
+
+- [ ] Verify conversational agent routing bug fixes, then that message routing works.
+- [ ] Feedback to David Kalman about website
+  - [x] rec video about dropdown
+- [ ] Check that pricing usage went down for CMV
+- [ ] Verify gpt-realtime transcription
+- [o] Don't break cache on nonce change
+- [ ] Use LLM pass on tasker feedback to identiy issues with component gathering
+- [ ] Actually remove the checkbox path
+
+What we're here to do is take people and turn them into agents. What we have absolute respect for is the data.
+
+# Friday Jan 2 2025
+- [x] Respond to comments on search agent
+- [x] Attempt a pass on transcription errors
 
 # Tuesday Dec 30 2025
 - [x] Video feedback for Rob
-- [ ] Merge vision 
+- [x] Merge vision 
 
 # Monday Dec 29 2025
 
