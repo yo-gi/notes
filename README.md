@@ -16,6 +16,19 @@
 
 ---
 
+# Thursday Jan 8 2026
+
+- [ ] Fix the race condition issue where the second text quickly needs to get reminded
+- [ ] Fix issue where we can re-awaken workflow correctly
+  - [ ] figure out how we prevent re-awakening flows that actually shouldn't be re-awoken
+
+- [x] Verify conversational agent routing bug fixes, then that message routing works.
+- [x] Check that pricing usage went down for CMV
+- [ ] Verify gpt-realtime transcription
+- [o] Don't break cache on nonce change
+- [ ] Use LLM pass on tasker feedback to identiy issues with component gathering
+- [ ] Actually remove the checkbox path
+
 # Wednesday Jan 7 2026 (!!)
 
 Thanks! Some feedback
@@ -37,17 +50,12 @@ Hey just catching up on everything. My current priorities -- does this line up?
 
 One flag: Rob hasn't sent an updated video he said he would send Monday - real chance of missing launch deadline here I think. Since he seems to respond better to pings from you could you give him a quick bump? Parts of the website are downstream of this so very important
 
-
-
-
 Given a generic SOP wouldn't claude code be able to actually execute on it right now?
 
 
-
-- [ ] Verify conversational agent routing bug fixes, then that message routing works.
-- [ ] Feedback to David Kalman about website
+- [x] Feedback to David Kalman about website
   - [x] rec video about dropdown
-- [ ] Check that pricing usage went down for CMV
+- [x] Check that pricing usage went down for CMV
 - [ ] Verify gpt-realtime transcription
 - [o] Don't break cache on nonce change
 - [ ] Use LLM pass on tasker feedback to identiy issues with component gathering
