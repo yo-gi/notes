@@ -16,6 +16,10 @@
 
 ---
 
+
+# Friday Jan 9 2026
+- [x] Small routing change
+
 # Thursday Jan 8 2026
 
 - [ ] Fix the race condition issue where the second text quickly needs to get reminded
