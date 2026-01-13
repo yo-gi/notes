@@ -16,16 +16,40 @@
 
 ---
 
+# Tuesday Jan 13 2026
+- [x] Follow up with Kim on the designer stuff
+
+# Monday Jan 12 2026
+
+- [x] Can we get started on agentic search actually
+
+- Rob video notes
+
+Thanks! It's really coming together
+
+[0:14-0:20] I don't think its clear that these instructions are what the agent is following in the next section at [0:20-0:31]. Some rough notes/ideas
+* Can we unify this to look more like the next section? Ideally what the user types here directly becomes the agent instructions and then the agent starts following them. 
+* It doesn't feel like the Pace editor. I think it should be clearer that the user is working in the Pace app to make these instructions.
+* It feels a bit disjointed to go from what the user writes to the slightly different set of instructions for the "FNOL AI Agent". 
+
+[0:35] Could we make these more visually distinct? Ex: they have SMS, Excel, etc. instead of all being the same screen
+[0:45] Extra / incomplete screen?
+Can we tie the agents at [0:37] more clearly to the task screen at [0:39]? We also need to give it a refresh IMO it looks disjointed from the other visual elements. Assuming the plan is also to unify it with the screen at the beginning?
+
+* Music is better!
+
+Some more misc. ennui
+Had a conversation with E on what's worth working on. Seems like he's generally pretty bored.
+
 
 # Friday Jan 9 2026
 - [x] Small routing change
 
 # Thursday Jan 8 2026
 
-- [ ] Fix the race condition issue where the second text quickly needs to get reminded
-- [ ] Fix issue where we can re-awaken workflow correctly
-  - [ ] figure out how we prevent re-awakening flows that actually shouldn't be re-awoken
-
+- [x] Fix the race condition issue where the second text quickly needs to get reminded
+- [x] Fix issue where we can re-awaken workflow correctly
+  - [x] figure out how we prevent re-awakening flows that actually shouldn't be re-awoken
 - [x] Verify conversational agent routing bug fixes, then that message routing works.
 - [x] Check that pricing usage went down for CMV
 - [ ] Verify gpt-realtime transcription
