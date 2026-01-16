@@ -16,6 +16,36 @@
 
 ---
 
+# Friday Jan 16 2026
+
+# Wednesday Jan 14 2026
+
+Company goal
+* I think the main company goal is to be on the edge of development
+* We must be automating all work as much as we can
+* Our feature velocity must be disgustingly high
+
+Deloitte
+contextual reasoning engine
+* repeated tasks
+
+* Which llms do you use
+* How is the agent framework
+  * our goal is to construct a world for our agents to operate in and give it the right tools so that in any different environment it can perform well
+* Partnership with openai, anthropic to fine tune models for certain cases
+* agents out of the box
+
+
+Notes for Andy
+- Hey Andy we're ready to kick off a rebrand + new site exercise
+- High level what does your availability look like? We're aiming to finish this by end of Q1 if possible
+- We'd like to do a brand adjustment. Last time we talked a lot of the branding was around replacing paper or document heavy work and you'll see that a lot of our brand elements match that, but we'd like to 
+orient more broadly towards being: "The AI partner for insurance companies". 
+
+- full branding would add 3 to 4 weeks to this
+- would be able to start early feb
+
+
 # Tuesday Jan 13 2026
 - [x] Follow up with Kim on the designer stuff
 
