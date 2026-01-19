@@ -16,7 +16,12 @@
 
 ---
 
+# Monday Jan 19 2026
+
 # Friday Jan 16 2026
+- set up weekly meeting for core agent last week
+- working on search agent evals expansion and better types
+- what if we rewrote the agent....... to be based on a file system.
 
 # Wednesday Jan 14 2026
 
