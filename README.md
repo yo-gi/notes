@@ -16,7 +16,11 @@
 
 ---
 
+# Tuesday Jan 20 2026
+
 # Monday Jan 19 2026
+- Working on search agent. Need to do a better job keeping track of what I was doing last time so I can pick back up.
+- Need to approve designs for the solutions page
 
 # Friday Jan 16 2026
 - set up weekly meeting for core agent last week
