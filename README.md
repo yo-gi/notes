@@ -16,9 +16,44 @@
 
 ---
 
+# Thursday Jan 22 2026
+
 # Wednesday Jan 21 2026
 
+## Priorities
+- [ ] Shadow search agent in production along with vision capabilities
+- [ ] Setup file system test bed
+
+- Things I should want to focus on
+  - Making sure we're on the bleeding edge
+  - Getting leverage across the engineering org
+- Things I'm thinking about dropping
+  - Design / positioning
+
+My 1 year anniversary at Pace
+
+Agent runtimes
+- Modal vs e2b vs daytona. e2b seems more easily self hosted and has BYOC on aws. Modal is a cooler startup
+- I'd like to do a file system type project where we satisfy the same agent interface but ideally its faster and runs on a file system and can run code and use skills and whatnot
+- I'd also like to do this for rules and extractions. What's a good way to satisfy these constraints ? I need entities, run steps, and results uploaded to the db so the rest of the app like reporting and corrections can work. 
+
+Projects
+- Need agentic excel extraction support for demo on Jan 26 - can improve capabilities
+- Need to deliver big "rewrite" ASAP - can set us up for the future and make things more reliable, code first, setup for the future.
+  - Interesting overview https://chatgpt.com/c/696e95c0-ac1c-832b-a3dc-0cbd60fb7f1e
+  - things that are foundational
+    - files
+    - writing and running code
+    - API / integrations / mcp / connectors
+  - things that are "tricks to get better performance"
+    - skills
+    - very specific tool calls (ex: send email tool call)
+    - abstractions like entities / results / whatever
+
+  we should cut down on tricks and build on foundations
+
 # Tuesday Jan 20 2026
+- Did some misc. stuff
 
 # Monday Jan 19 2026
 - Working on search agent. Need to do a better job keeping track of what I was doing last time so I can pick back up.

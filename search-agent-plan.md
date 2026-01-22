@@ -13,6 +13,11 @@
 
 ## Tasks
 - [x] Clean up orchestrate single extraction (remove all the patches)
+- [ ] Fix misc errors
+  - Error 1: eval dataset has wrong entity because merge doesn't consider old entities?? this is a merge issue
+  - Error 2: rule is missing model enrichment value
+  - Error 3: 
+- [ ] Fix various eval failures
 - [ ] Find a way to handle vision -- basically just answer synthesis as a tool..???
 - [ ] Embed documents as part of ingestion
 - [ ] Generic agent interface that we can plug different pieces of tools into and it will search whatever
