@@ -21,9 +21,7 @@
 - [ ] Generic agent interface that we can plug different pieces of tools into and it will search whatever
 
 - [ ] Fix various eval failures
-  - Error 1: eval dataset has wrong entity because merge doesn't consider old entities?? this is a merge issue
-  - Error 2: rule is missing model enrichment value
-  - Error 3: "consider every single chunk" type use case. Rule looking for spelling issues, the search agent is not optimized for that
+  - [ ] Error: "consider every single chunk" type use case. Rule looking for spelling issues, the search agent is not optimized for that
   {
   "correctionId": null,
   "createdAt": "2026-01-05T23:36:43.69Z",
@@ -39,7 +37,7 @@
   "taskUrl": "https://app.withpace.com/tasks/1887acb6-6a75-468e-b497-a7bc7be068cf"
 }
 
-- Error 4: Thinks question 6 is blank but its not
+- [ ] Error: Thinks question 6 is blank but its not
 https://www.braintrust.dev/app/Foundation/p/Search%20Agent/experiments/search-agent-eval-1769101802738?c=search-agent-eval-1769011675851&r=216fb4e4-49f5-4642-bc79-156e574131b7&s=216fb4e4-49f5-4642-bc79-156e574131b7
 {
   "correctionId": null,
@@ -69,3 +67,6 @@ https://www.braintrust.dev/app/Foundation/p/Search%20Agent/experiments/search-ag
 ### Realign
 - same thing
 - IDEAL: ready for jan 26
+
+### Novacore
+- Handle SOP with 100+ API requests that need to be done. Obviously none of them can be dropped

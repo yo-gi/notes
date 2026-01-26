@@ -16,15 +16,29 @@
 
 ---
 
+# Monday Jan 26 2026
+
 # Friday Jan 23 2026
 
+My general priorities 
+- Remain high leverage, make sure the team is on the bleeding edge
+- Remain involved in the building of the company - stay T shaped
+
+We need to let this thing write code. That's this year's version of leaning into non-determinism.
+So many of the issues I've seen over the last week are all just -- the agent can't write code.
+
+- My number 1 priority today:
+  - See if embedding everything is feasible
+  - Shadow search agent in production
+  - See if it can run code to extract excel
+
 # Thursday Jan 22 2026
+- Some debugging stuff
+- [x] Vision capabilities are in
 
 # Wednesday Jan 21 2026
 
 ## Priorities
-- [ ] Shadow search agent in production along with vision capabilities
-- [ ] Setup file system test bed
 
 - Things I should want to focus on
   - Making sure we're on the bleeding edge
