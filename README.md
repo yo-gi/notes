@@ -1,20 +1,24 @@
 # TODO
 
-## Ideas
-
-- [ ] Devin style "Browser" / "Voice call" tab design
 - [ ] Give quick overview on all the use cases that customers are using Pace for
 
-## Problems
-
-- [ ] Shared set of entities for child agents instead of cloned entities
-
-## Top of backlog
-- [ ] Wrap up diffing
-- [ ] Research conversational agent
-- [ ] Think about general agent harness and how we can make it more usable and self serve....
-
 ---
+---
+---
+
+# Wednesday Jan 28 2026
+
+# Tuesday Jan 27 2026
+- [ ] Merge the flow run steps update
+We launched the sequoia fundraise today
+- Added notes today in /sandbox-agents.md
+
+# Clean up old tasks
+- [N] Devin style "Browser" / "Voice call" tab design
+- [x] Wrap up diffing
+- [x] Research conversational agent
+- [x] Think about general agent harness and how we can make it more usable and self serve....
+- [x] Shared set of entities for child agents instead of cloned entities
 
 # Monday Jan 26 2026
 
