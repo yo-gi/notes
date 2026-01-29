@@ -6,7 +6,17 @@
 ---
 ---
 
+# Thursday Jan 29 2026
+
+## OAI Feedback
+- The skill doesn't actually get used?
+- Can we make a deterministic skill? Like if a skill requires 3 API calls in sequence, we have some guarantee that it actually gets called? Would we have the skill call a script in that case?
+
+
 # Wednesday Jan 28 2026
+OAI Feedback
+- Skills are interesting but we're not going to use the container or the loading of skills. We have data requirements that we have to comply with
+- 
 
 # Tuesday Jan 27 2026
 - [ ] Merge the flow run steps update

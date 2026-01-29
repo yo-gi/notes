@@ -2,7 +2,7 @@
 
 - [x] We need tool preambles from the agent. Now that I think about it I think the reasoning is missing completely. It is now showing separately.
 - [ ] Sub agents for stuff like extraction / cua / voice
-- [ ] Optimized for working with Openai
+- [ ] Optimized for working with Openai -- Luis is handling
   - [ ] Testing excel spreadsheet skills
   - [ ] Testing misc. skills
   - [ ] Having a better understanding of the sandbox environment
@@ -10,3 +10,4 @@
 - [ ] Figure out how to integrate with reporting. Maybe this will just be 
 - [x] Figure out how to eval the Openai requests. Specifically just skills as UAR is python...
 - [x] RFC for the agent migration
+
