@@ -6,11 +6,23 @@
 ---
 ---
 
+# Friday Jan 30 2026
+
 # Thursday Jan 29 2026
 
+Need some way to deep dive and visualize a specific sub agents trace
+
 ## OAI Feedback
-- The skill doesn't actually get used?
+- The skill doesn't actually get used? It's unclear what gets the skill to get used.
+- general strat for getting data out of unstructured
 - Can we make a deterministic skill? Like if a skill requires 3 API calls in sequence, we have some guarantee that it actually gets called? Would we have the skill call a script in that case?
+- For the UAR here's what we need
+  - snapshot
+  - restore
+  - clone
+  - excel
+  - manifest is cool
+
 
 
 # Wednesday Jan 28 2026
