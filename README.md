@@ -8,6 +8,15 @@
 
 # Friday Jan 30 2026
 
+- [ ] Push the flow run steps thing
+- [ ] Store the full request response trace so that agents that get interrupted can pick back up. Store logs with an agent id that temporal provides and on startup we can look for those logs.
+- [ ] Change the extract tool such that it ends right after you kick off all the subagents and then the subagents are just responsible for writing to the result file -- need to find a way to do this atomically so there are no race conditions....
+- [ ] try beautiful mermaid for diagrams..
+
+Interesting idea from kim just convert all the old flows/tasks into a huge json file that the agent can then represent. Might work. Need some way to sync between results and s3
+
+# Monday Feb 2 2026
+
 # Thursday Jan 29 2026
 
 Need some way to deep dive and visualize a specific sub agents trace
