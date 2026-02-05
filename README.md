@@ -4,7 +4,34 @@
 
 ---
 
-# Tuesday Feb 3 2026
+# Week of Feb 2 - 6
+
+Promises:
+
+- [x] Editor with AOP
+- [ ] Ryze flow - level capabilities
+  - [ ] Upload multiple emails in create task
+  - [ ] Extractions
+  - [ ] Rules
+  - [ ] Export
+- [ ] Editor with versioning
+
+Tasks:
+
+- [ ] Actually plumb email from the attachment into the sandbox
+- [ ] Add attachments to the create task email
+- [ ] Show rule and extraction nodes in the main editor
+- [ ] Migrate button to migrate nodes to files
+- [ ] Implement a pure agent version of extractions, Rules while waiting
+- [ ] Sub agents actually work
+- [ ] Publish button to publish a new version of the agent
+- [ ] Add export skill.
+
+## Wednesday Feb 4 2026
+
+- Lauren onsite, help onboard
+
+## Tuesday Feb 3 2026
 
 - [ ] Create task with multiple PDFs
 

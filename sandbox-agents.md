@@ -23,7 +23,8 @@ TMG flow -- all ryze stuff except export with
 - [ ] Clean up stream events so they are cleaner
 - [ ] Verify that this snapshotting works across versions. bring back publish
 - [ ] Do auto save on file edit
-- [ ] Sidebar that's more simplified and doesn't literally show a file system
+- [ ] Sidebar that's more simplified and doesn't literally show a file system. It should also have data model definitions
+- [ ] How would voice being alive be handled? Does the main agent sleep until voice is done?
 
 ## Big rocks
 
