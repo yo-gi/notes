@@ -18,14 +18,20 @@ Promises:
 
 Tasks:
 
-- [ ] Actually plumb email from the attachment into the sandbox
-- [ ] Add attachments to the create task email
-- [ ] Show rule and extraction nodes in the main editor
-- [ ] Migrate button to migrate nodes to files
+- [x] Actually plumb email from the attachment into the sandbox
+- [x] Add attachments to the create task email
+- [x] Show extraction nodes in the main editor
+- [x] Migrate button to migrate nodes to files
+- [ ] Show the nodes even if its not in the files api response.
 - [ ] Implement a pure agent version of extractions, Rules while waiting
 - [ ] Sub agents actually work
-- [ ] Publish button to publish a new version of the agent
 - [ ] Add export skill.
+- [ ] Show rule nodes in the main editor
+- [ ] Publish button to publish a new version of the agent
+- [ ] Can batch how long the agent runs before its stopped and a new activity is spun up
+- [ ] Agents can pick up from where they crashed/were paused or stopped. (scheduled to different activity etc.)
+
+## Friday Feb 6 2026
 
 ## Wednesday Feb 4 2026
 
