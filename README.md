@@ -6,6 +6,30 @@
 
 # Week of Feb 9 - 13
 
+- [ ] Ryze flow - level capabilities
+  - [ ] Upload multiple emails in create task
+  - [ ] Extractions
+  - [ ] Rules
+  - [ ] Export
+- [ ] Editor with versioning
+
+Tasks:
+
+- [ ] Main agent doesn't make manual extraction files
+- [ ] Add export skill (Ryze and WTW) - Ryze wants to create PDF with rule results and WTW wants to modify a template Excel file with some data and then send it in an email or something.. Probably upload
+- [ ] Send email tool / capability -- For communications, send email etc; Do we do fake MCP
+- [ ] REST API tool - For rest api tool maybe we put the tool config into a file that then the agent can refer to and do stuff with. Is this not just a skill for that specific rest api call?
+
+- [ ] Disagbiguate between readonly and write ableskills
+- [ ] Fix bad skills route? (mb rachel is doing this)
+- [ ] Publish button to publish a new version of the agent
+- [ ] Can batch how long the agent runs before its stopped and a new activity is spun up
+- [ ] Agents can pick up from where they crashed/were paused or stopped. (scheduled to different activity etc.)
+
+## Tuesday Feb 10 2026
+
+---
+
 ## Monday Feb 9 2026
 
 ---
@@ -24,14 +48,6 @@ Promises:
 
 Tasks:
 
-- [x] Actually plumb email from the attachment into the sandbox
-- [x] Add attachments to the create task email
-- [x] Show extraction nodes in the main editor
-- [x] Migrate button to migrate nodes to files
-- [x] Show the nodes even if its not in the files api response.
-- [x] Show rule nodes in the main editor
-- [x] Implement a pure agent version of extractions, Rules while waiting
-- [x] Sub agents actually work
 - [ ] Add export skill.
 - [ ] Disagbiguate between readonly and write ableskills
 - [ ] Fix bad skills
@@ -40,6 +56,15 @@ Tasks:
 - [ ] Agents can pick up from where they crashed/were paused or stopped. (scheduled to different activity etc.)
 
 ## Friday Feb 6 2026
+
+- [x] Actually plumb email from the attachment into the sandbox
+- [x] Add attachments to the create task email
+- [x] Show extraction nodes in the main editor
+- [x] Migrate button to migrate nodes to files
+- [x] Show the nodes even if its not in the files api response.
+- [x] Show rule nodes in the main editor
+- [x] Implement a pure agent version of extractions, Rules while waiting
+- [x] Sub agents actually work
 
 ## Wednesday Feb 4 2026
 
