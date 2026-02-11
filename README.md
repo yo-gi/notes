@@ -6,25 +6,21 @@
 
 # Week of Feb 9 - 13
 
-- [ ] Ryze flow - level capabilities
-  - [ ] Upload multiple emails in create task
-  - [ ] Extractions
-  - [ ] Rules
-  - [ ] Export
-- [ ] Editor with versioning
-
 Tasks:
 
 - [ ] Main agent doesn't make manual extraction files
-- [ ] Add export skill (Ryze and WTW) - Ryze wants to create PDF with rule results and WTW wants to modify a template Excel file with some data and then send it in an email or something.. Probably upload
 - [ ] Send email tool / capability -- For communications, send email etc; Do we do fake MCP
 - [ ] REST API tool - For rest api tool maybe we put the tool config into a file that then the agent can refer to and do stuff with. Is this not just a skill for that specific rest api call?
-
-- [ ] Disagbiguate between readonly and write ableskills
+- [ ] Add export skill (Ryze and WTW) - Ryze wants to create PDF with rule results and WTW wants to modify a template Excel file with some data and then send it in an email or something.. Probably upload
+- [ ] Disambiguate between readonly and write ableskills
 - [ ] Fix bad skills route? (mb rachel is doing this)
 - [ ] Publish button to publish a new version of the agent
 - [ ] Can batch how long the agent runs before its stopped and a new activity is spun up
 - [ ] Agents can pick up from where they crashed/were paused or stopped. (scheduled to different activity etc.)
+
+## Wednesday Feb 11 2026
+
+---
 
 ## Tuesday Feb 10 2026
 
@@ -40,8 +36,8 @@ Promises:
 
 - [x] Editor with AOP
 - [ ] Ryze flow - level capabilities
-  - [ ] Upload multiple emails in create task
-  - [ ] Extractions
+  - [x] Upload multiple emails in create task
+  - [x] Extractions
   - [ ] Rules
   - [ ] Export
 - [ ] Editor with versioning
