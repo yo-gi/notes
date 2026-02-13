@@ -8,7 +8,11 @@
 
 Tasks:
 
-- [ ] Main agent doesn't make manual extraction files
+- [ ] Clean up manifest
+- [ ] Based on clean manifest, ensure that certain tool configs are persisted as REST API call configs. Agent can run code to call this API
+- [ ] Write a new send email tool that the agent can use to send an email that respects allow lists.
+- [ ] Plan for MCP
+
 - [ ] Send email tool / capability -- For communications, send email etc; Do we do fake MCP
 - [ ] REST API tool - For rest api tool maybe we put the tool config into a file that then the agent can refer to and do stuff with. Is this not just a skill for that specific rest api call?
 - [ ] Add export skill (Ryze and WTW) - Ryze wants to create PDF with rule results and WTW wants to modify a template Excel file with some data and then send it in an email or something.. Probably upload
@@ -18,13 +22,27 @@ Tasks:
 - [ ] Can batch how long the agent runs before its stopped and a new activity is spun up
 - [ ] Agents can pick up from where they crashed/were paused or stopped. (scheduled to different activity etc.)
 
+## Friday Feb 13 2026
+
+## Thursday Feb 12 2026
+
+- working on yogi/implement-sandbox-email-tooling-stub for send email functionality
+- rest api functionality with extract seems to work
+
+// TODO
+
+// move all the manifest stuff into a folder
+// rename run - streams to streams
+// all the run\* stuff should be specific to flow runs, every thing else should have a more generic name
+
 ## Wednesday Feb 11 2026
 
----
+- [o] Main agent doesn't make manual extraction files - Might be because agent wasn't waiting
 
 ## Tuesday Feb 10 2026
 
----
+- Spent a bunch of time getting entities over the line, PR just kept ballooning. I'm not sure what to do about it.
+  It seems like all the PRs end up so fat. There's a lot of refactoring...
 
 ## Monday Feb 9 2026
 
