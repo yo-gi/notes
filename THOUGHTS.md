@@ -1,0 +1,1 @@
+I say this not to spread fud or fearmonger or ask for an answer but -- the world is changing fast and I think we need to adapt. The question here is how can we become a generational company that's a beloved fixture of the insurance and financial services apparatus. We need to deliver significant value to customers and sustainably capture it.
