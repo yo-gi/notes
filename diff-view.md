@@ -1,3 +1,0 @@
-- See text diff view like Github
-  - prefers github view
-- collapse nodes

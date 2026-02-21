@@ -24,6 +24,27 @@ Tasks:
 
 ## Friday Feb 13 2026
 
+
+### 📄 voice-cua-v3-demo.md (Last modified: 2026-02-20)
+
+# Demo
+
+- [ ] See sub agents handling incoming requests in this sandbox
+- [ ] Be speaking to it on a live call
+- [ ] Kick off cua instances
+
+# Tactically
+
+- Kick off plans, work on coat of paint
+- [ ] Task tool call
+- [ ] Coat of paint that seems nice
+- [ ] Task tool with generic sub agent instructions
+- [ ] Voice integration (L)
+- [ ] CUA integration (M) ( just a tool call )
+
+
+---
+
 ## Thursday Feb 12 2026
 
 - working on yogi/implement-sandbox-email-tooling-stub for send email functionality
@@ -41,10 +62,54 @@ Tasks:
 
 ## Tuesday Feb 10 2026
 
+
+### 📄 THOUGHTS.md (Last modified: 2026-02-10)
+
+I say this not to spread fud or fearmonger or ask for an answer but -- the world is changing fast and I think we need to adapt. The question here is how can we become a generational company that's a beloved fixture of the insurance and financial services apparatus. We need to deliver significant value to customers and sustainably capture it.
+
+
+---
+
 - Spent a bunch of time getting entities over the line, PR just kept ballooning. I'm not sure what to do about it.
   It seems like all the PRs end up so fat. There's a lot of refactoring...
 
 ## Monday Feb 9 2026
+
+
+### 📄 extraction-agent.md (Last modified: 2026-02-09)
+
+# Extraction agent
+
+## Customer requests for extraction
+
+### Smaller requests
+
+- Ability to perform simple calculations
+- Good summaries of documents that are too large to fit in context window
+- Ability to exclude certain pages documents under certain conditions
+  - Can we enforce this or is it up to the LLM's judgment?
+- Ability to handle Excel docs
+
+### Bigger milestones
+
+- Can we completely or partially drop Reducto/Textract?
+  - Currently being used for chunking and bounding boxes for citations
+  - Costs a lot
+  - Run into a lot of issues with reliability and accuracy (missed checkboxes or form fields, etc.)
+- Can we self improve? A large chunk of FDE time can end up being prompt engineering
+  - What would the ideal system look like? Architecture, cadence of running, etc.
+  - What is a good UX for this?
+- What is the ideal pipeline
+  - Can we make this a lot faster and cheaper?
+
+- [ ] Simple extractions
+- [ ] Using code to do transformations/calculations
+- [ ] Can use vision to find more information
+- [ ] Can convert various files to markdown or similar
+- [ ] Can handle navigating an excel spreadsheet
+
+
+---
 
 ---
 
@@ -81,6 +146,56 @@ Tasks:
 - [x] Sub agents actually work
 
 ## Wednesday Feb 4 2026
+
+
+### 📄 sandbox-agents.md (Last modified: 2026-02-04)
+
+# TODO
+
+High level
+
+Ryze flow
+
+- [ ] Intake email
+- [ ] Extractions
+- [ ] Rules
+- [ ] Export
+
+TMG flow -- all ryze stuff except export with
+
+- [ ] Running code
+- [ ] REST Api
+- [ ] Can we run code to call tools?
+
+## Smaller rocks
+
+- [ ] Agent will load its own messages on load with an agent id by inspecting ndjson
+- [ ] The "Should stop" agent functionality should be determined by if it just called the done tool instead of the stop requested stuff
+- [ ] Clean up the NJSON log
+- [ ] Clean up stream events so they are cleaner
+- [ ] Verify that this snapshotting works across versions. bring back publish
+- [ ] Do auto save on file edit
+- [ ] Sidebar that's more simplified and doesn't literally show a file system. It should also have data model definitions
+- [ ] How would voice being alive be handled? Does the main agent sleep until voice is done?
+
+## Big rocks
+
+- [ ] Sub agents for stuff like extraction / cua / voice
+- [ ] Persistence for longer running agents. Can we actually just add a new set of DBs and then we can also make sure we add a row to task and run and we'll get the data there.
+- [ ] Figure out how to integrate with reporting. Maybe this will just be based on results.......
+
+## Done
+
+- [x] We need tool preambles from the agent. Now that I think about it I think the reasoning is missing completely. It is now showing separately.
+- [x] Figure out how to eval the Openai requests. Specifically just skills as UAR is python...
+- [x] RFC for the agent migration
+- [x] Optimized for working with Openai -- Luis is handling
+  - [x] Testing excel spreadsheet skills
+  - [x] Testing misc. skills
+  - [x] Having a better understanding of the sandbox environment
+
+
+---
 
 - Lauren onsite, help onboard
 
@@ -147,6 +262,85 @@ OAI Feedback
 # Monday Jan 26 2026
 
 # Friday Jan 23 2026
+
+
+### 📄 search-agent-plan.md (Last modified: 2026-01-23)
+
+# Search agent
+
+## Goals
+1. validate that a generic search agent could work
+- canopius wants to search over a bunch of tasks to look for similar tasks
+- we want to embed things
+
+2. replace COR with agentic search
+- validate it by running it against different things -- compare cost vs regular synthesis somehow....
+
+3. See if we can make a more general backbone that we can use for all our agents....
+
+
+## Tasks
+- [x] Clean up orchestrate single extraction (remove all the patches)
+- [x] Find a way to handle vision -- basically just answer synthesis as a tool..???
+- [ ] Excel functionality
+- [ ] Embed documents as part of ingestion
+- [ ] Run it on prod against actual extractions
+- [ ] Figure out the ID aliasing thing. Do we want the UUIDs to be so prevalent?
+- [ ] Generic agent interface that we can plug different pieces of tools into and it will search whatever
+
+- [ ] Fix various eval failures
+  - [ ] Error: "consider every single chunk" type use case. Rule looking for spelling issues, the search agent is not optimized for that
+  {
+  "correctionId": null,
+  "createdAt": "2026-01-05T23:36:43.69Z",
+  "entryKey": "c434e361-2ec6-4e60-b830-b0e283e92036:result",
+  "fieldPath": "result",
+  "flowId": "04c6b895-abdb-48de-85f7-fdf833751f88",
+  "flowVersionId": "3218cc25-0d0f-4541-8569-a4370d76c36f",
+  "nodeId": "a4466144-c23e-472b-9669-2b4cdd6517b4",
+  "orgId": "bd5edef8-af19-45c2-a795-d043c6e4bc85",
+  "resultId": "c434e361-2ec6-4e60-b830-b0e283e92036",
+  "runId": "1e92830b-e0cc-4ec6-9be9-1581cabc4729",
+  "taskId": "1887acb6-6a75-468e-b497-a7bc7be068cf",
+  "taskUrl": "https://app.withpace.com/tasks/1887acb6-6a75-468e-b497-a7bc7be068cf"
+}
+
+- [ ] Error: Thinks question 6 is blank but its not
+https://www.braintrust.dev/app/Foundation/p/Search%20Agent/experiments/search-agent-eval-1769101802738?c=search-agent-eval-1769011675851&r=216fb4e4-49f5-4642-bc79-156e574131b7&s=216fb4e4-49f5-4642-bc79-156e574131b7
+{
+  "correctionId": null,
+  "createdAt": "2026-01-05T22:31:12.332Z",
+  "entryKey": "8889398f-4bd9-4a3b-9e2a-4da089669b04:result",
+  "fieldPath": "result",
+  "flowId": "04c6b895-abdb-48de-85f7-fdf833751f88",
+  "flowVersionId": "3218cc25-0d0f-4541-8569-a4370d76c36f",
+  "nodeId": "c9511c2b-87d2-4893-8620-39fefeb378dd",
+  "orgId": "bd5edef8-af19-45c2-a795-d043c6e4bc85",
+  "resultId": "8889398f-4bd9-4a3b-9e2a-4da089669b04",
+  "runId": "57ce7669-3e87-4896-ae1d-a105737cc384",
+  "taskId": "17bb0567-8e00-49f6-9bca-1506d11f9fa9",
+  "taskUrl": "https://app.withpace.com/tasks/17bb0567-8e00-49f6-9bca-1506d11f9fa9"
+}
+
+
+## Customers
+
+### WTW
+- 16k row excel, want to extract like 5 rows out of the file
+- 3 sheets in the larger spreadsheet
+- this needs to get put into an extraction result
+- spreadsheet coming in as an email attachment
+- IDEAL: show monday morning that this works
+
+### Realign
+- same thing
+- IDEAL: ready for jan 26
+
+### Novacore
+- Handle SOP with 100+ API requests that need to be done. Obviously none of them can be dropped
+
+
+---
 
 My general priorities
 
@@ -324,6 +518,26 @@ What we're here to do is take people and turn them into agents. What we have abs
 
 # Friday Jan 2 2025
 
+
+### 📄 transcription.md (Last modified: 2026-01-02)
+
+# Transcription
+
+* Wisprflow is clearly good why is this bad?
+  * wisprflow fine tuned llama https://www.baseten.co/resources/customers/wispr-flow/
+* can we stalk someone's info based on their phone
+
+Notes from Bharat:
+* llm pass 
+* focus on the prompting - there's a lot to be gained just from focusing the thing on collecting the info in the correct way
+* give it reasonable words
+* clean up pass on the transcription based on common knowledge
+* look up addresses on google, verify phone numbers, etc.
+* call ppl with diff voice models and then see how it does
+
+
+---
+
 - [x] Respond to comments on search agent
 - [x] Attempt a pass on transcription errors
 
@@ -347,6 +561,15 @@ There's some long tail of stuff but remember the goal grid. Let us keep that in 
 
 # Friday Dec 19 2025
 
+
+### 📄 diff-view.md (Last modified: 2025-12-19)
+
+- See text diff view like Github
+  - prefers github view
+- collapse nodes
+
+---
+
 - [ ] Tell Rob about the different design checkpoints we need
   - Checkpoint re: Solutions page
 
@@ -356,6 +579,95 @@ Hey Rob, as we talked about during our chat we wanted to be able to use some fra
 - A clip/frame showing how the SOP (agent instructions) map to what the agent does
 
 # Thursday Dec 18 2025
+
+
+### 📄 cmv-2.md (Last modified: 2025-12-18)
+
+# Results
+5.2 is winning
+
+## Rule: Part 1 Section B - Plan of Insurance
+
+1. 2+ instances of unclear rule
+- 5.2 fails it because no checkbox is marked when "Other" is marked, but the rule doesn't specify anything about the "Other" case
+https://app.withpace.com/tasks/1d44762f-9f6a-4e8f-919f-86d23f40a2c2
+
+## Rule: Part 1 Section C - Premium
+
+1. Duplicate pages, one with checkboxes correctly filled and one without. The second page is presumably for overflow for other forms.
+https://app.withpace.com/tasks/17aa31b8-368b-4121-aa72-56ab1b8ee9f7
+
+## Rule: Agent Checklist
+1. Secondary addressee from not getting component gathered because rule doesn't mention how to handle it. 5.2 fails it
+https://app.withpace.com/tasks/269fef43-aa9e-4748-961c-1fd6e9f5336a
+Many many of these... 10~
+
+## Rule: Part 2, Section C - Family History
+1. Failed due to missing age at diagnosis
+https://app.withpace.com/tasks/e4eff7c5-1f81-4116-8d67-6397da15b4f7
+
+## Rule: Section A. Business Information Questions 1-6
+1. 5.2 failed because rule mentions MM/YY date and the date is MM/YYYY (lol). 
+https://app.withpace.com/tasks/20d1f1cc-c0bb-4710-a029-3fa5b080068d
+
+## Rule: Part 1 Section A Number 8 - Permanent, legal US resident
+1. 5.2 failed because Visa type is "Unknown"
+https://app.withpace.com/tasks/61659dc1-dc89-4ad3-8470-cbbd840250bd
+
+## Rule: Part 2, Signatures
+
+node id : 6342f641-cb25-4294-bcee-4c8a4bc2bdd8
+
+### CMV win [## INVESTIGATE IMAGES HERE]
+Signed at (State) OR - things its Or not oregon <-- first real flag
+https://app.withpace.com/tasks/5e94adf8-2580-4f9b-8387-589c085c41b7 <- OR
+https://app.withpace.com/tasks/3d42886c-89df-4af9-adbb-79f944d3179f <- IL
+https://app.withpace.com/tasks/3446b9ef-999a-4935-b329-fee3f71f2381 <- ID
+https://app.withpace.com/tasks/2877d069-972b-4709-816d-ecc9b990d617 <- ID
+https://app.withpace.com/tasks/fdc58eec-5574-4d1d-9254-690d7dbcd7a8 <- ID
+https://app.withpace.com/tasks/17f815f6-4613-48da-91bf-8ed7935baccd <- ID
+
+### 5.2 wins
+https://app.withpace.com/tasks/cd265963-7132-44cd-b7d4-1d9a970afccb <- OK
+https://app.withpace.com/tasks/151cc963-dc6b-4603-b919-5641c3c1406f <- OR
+https://app.withpace.com/tasks/3cf73247-b1d8-400e-b322-a96aff2630ff <- OK
+
+## Rule: Part 1 Section G - General Information
+
+5.2 fails because "frequency" of travel is not mentioned for traveling outside the US
+https://app.withpace.com/tasks/806ea624-63f6-42e5-893b-7729761c563f
+https://app.withpace.com/tasks/7de3a46b-b27c-4bda-8bed-7adda30c86eb
+
+## Rule: Part 1 Section F - Insurance History
+
+1. Duplicate pages, one with checkboxes correctly filled and one without. The second page is presumably for overflow for other forms.
+https://app.withpace.com/tasks/683cd8cb-73b6-4539-9237-6dc39a888013
+https://app.withpace.com/tasks/62972c86-351a-46f5-bd68-43b57842379c
+https://app.withpace.com/tasks/a4bd0e3b-e5a4-42ff-a817-9d44cceae591
+
+5.2 wins because it sees the product column correctly when CMV doesn't - https://app.withpace.com/tasks/13086794-90f7-4a66-a3dd-0e6069f69d28
+5.2 wins because it sees type column correctly
+https://app.withpace.com/tasks/21548806-994a-438b-9a1f-b428cd71ea55
+https://app.withpace.com/tasks/2877d069-972b-4709-816d-ecc9b990d617
+https://app.withpace.com/tasks/ba5281f8-c00a-4fbc-8e3d-ccee687bd101
+
+## Rule: Section above Section A
+Component gathering Cannot find the right supplement sections
+
+## Rule: Part 2, Signatures Box, "I am not a U.S. person..." checkbox
+
+Confusion between signed at state and rule. Rule could be written better.
+- https://app.withpace.com/tasks/e294241f-b020-4598-82a0-581201e9be81
+
+## Rule: Base Rating and Table Rating
+
+Possible issue with not using contextual substitution. It is clearly understanding the issue.. Just the rule is unclear.
+- https://app.withpace.com/tasks/e294241f-b020-4598-82a0-581201e9be81
+
+Rating class confusion
+- https://app.withpace.com/tasks/e4a8a0d9-d423-44c3-97ab-f8d9497d832b
+
+---
 
 - [ ] Roadmap ...
 - [x] Write the damn blog post
@@ -440,6 +752,100 @@ What's interesting is we need to make sure these following customer requests get
 - [x] Finish routing layer
 
 # Thursday Dec 11 2025
+
+
+### 📄 multiplayer.md (Last modified: 2025-12-12)
+
+# Multiplayer
+
+## blocks plan
+- [x] add whatever block metadata is needed to nodes
+- [x] redis streams to sync updates to a node to all listeners
+- [x] on update to a node the listeners receive the new node
+- [x] attach avatar state to the collapsible wrapper
+- [x] when you update you change the version and you cannot update without being on the latest version
+- [x] sync publish state
+- [x] attach avatar state also to the editor
+- [x] check every node
+- [x] simple fix for update race condition is like... check if this current session is making the edits then don't overwrite the local.?
+
+## for fun..
+- tiptap -> mdx..
+- fix task / run streaming
+- clean up like... the use editor state stuff
+- add alert on url spikes to datadog
+- remove intercom
+- add react query debugger
+- replace toast with sonner and add buttons
+
+## rushlight plan
+- consolidate state into string
+  - write node <> directive mapping
+  - make a functional version of each editor and bring it in
+  - external editors might also be depending on this string
+- multiplayer the string rushlight style w/ redis and lexical state...
+
+## plan for single mdx editor
+After reflection This might work, but we still need to support many other nodes. Unless we want to converge all nodes into this one single node, we might as well just implement node- or block-level multiplayer.
+
+* bring state into the mdx - into the each node
+  - minimal version is putting it into the node key
+  - better version is having some kind of delimiting such that it's not a pita to read
+* state comes from step node
+* you only edit the step node
+* for now we edit the actual node row in the db when the step node node gets edited
+* need a nonce on the node to know if you need to update
+* the mdx node value is just the json of the zod schema
+* then........ you can just YJS or rushlight the whole document
+
+## constraints
+* few users.... simple doc
+
+## random
+* compaction?
+* ot vs crdt
+
+
+## prompts
+
+I want to build my own custom container based markdown directive that lets me embed arbitrary json data into these directives
+
+For example, a normal container directive might look like this
+<markdown>
+# some title
+
+::: tip
+this is some tip
+:::
+
+Some more text
+</markdown>
+
+What I want to build is a more advanced version that looks like this
+
+<markdown>
+# some title
+
+::: node
+{
+  "name": "someName",
+  "nestedObject": { "A": "X", "B": [1, 2, 3] },
+  "arrayOfSomeKind": [1, 2, 3],
+  "anythingReally": true
+}
+:::
+
+This is some more text
+</markdown>
+
+Given some directive like this, I want to be able to edit this with a custom React component. I want to define many different kinds of nodes, each with their own data type and each with their own React component. This React component could really be anything. It could be input sliders, text areas, buttons, whatever I want really. It should just be arbitrary React. And the interesting thing is I want to create some kind of binding where as I use these inputs, they edit the directive content underneath.  So for example, you can imagine me having a radio button to set the `anythingReally` variable above to `true` or `false`.
+
+I also don't want the React components to know about MDX, Markdown, or MDAST.   I want them to just take in some value and a callback to edit that value. Then, some shared container component would serialize that incoming value and update the MDAST. So you can see there's this one bridge component and many many possible react editor components.
+
+Consider the code here: apps/frontend/src/pages/Flows/Editor/components/flow-doc-editor/node-directive-descriptor.tsx
+I have the beginnings of this directive here... Can you write a proof of concept of this feature with clean concise code and we can go from there. This POC should include all the features I've described above and two simple example child editor components that edit slightly different jsons. The child components should have some buttons, inputs, and a radio.
+
+---
 
 - [x] Send rob assets
 - [x] Anthropic and 5.2 testing...
@@ -631,6 +1037,43 @@ Quick check in re: productizing mid-market motion - dyt still think that's valua
 
 # Thursday Nov 27 2025
 
+
+### 📄 page-site-concepts.md (Last modified: 2025-11-27)
+
+# v2
+
+life
+  carrier
+  mga
+  broker
+p&c
+annuity
+group benefits
+
+
+## life
+
+hero: 
+- complexity of life insurance procedures uniquely lend themselves to agentic solutions
+- revamp your life insurance operations with ai
+
+- taxonomies of life carriers
+
+## p&c
+
+- urgency of underwriting
+
+## group benefits
+
+- manual nature of onboarding
+
+## annuties
+
+- quadruple your capacity
+- agents don't have capacity, let the interest rates change
+
+---
+
 # Reflection
 
 I'm not convinced that we're much more productive than if just me and Eric were working
@@ -677,6 +1120,77 @@ I'd prefer to just hand all of that off to someone else and drive forward on big
 I also need to spend some time guiding other workflows (ex: voice) because they're starting to set up bad foundations that are going to bite us in the near future.
 
 # Wednesday Nov 26 2025
+
+
+### 📄 cmv.md (Last modified: 2025-11-26)
+
+# Part 1 Section E Beneficiary details
+
+#       Wins        Losses
+Reducto 4           1
+Gemini  5           0
+CMV     1           4
+
+# Part 1 Section F Insurance History
+
+#       Wins        Losses
+Reducto 2           1
+Gemini  0           3
+CMV     1           2
+
+Reducto wins
+N1125250 https://app.withpace.com/tasks/5c6701eb-e2ca-4979-b9c4-ac21ad437ac4
+N1131955 https://app.withpace.com/tasks/d4d9fab9-348c-4075-86f9-95964fe3e3ae
+
+# Part 2 Section C Family History
+
+#       Wins        Losses
+Reducto 0           0
+Gemini  0           0
+CMV     0           0
+Unclear 3
+
+N1110580 - https://app.withpace.com/tasks/45060746-a8bc-4e06-a75c-9e83594fc97e - missing age at diagnosis
+         - https://app.withpace.com/tasks/c6b7c9aa-f091-405e-8249-a1755b57a646
+         - third
+
+- reducto fail, others passed
+
+# Part 2 Section D Medical Information
+
+#       Wins         Losses
+Reducto 7            3
+Gemini  10           0
+CMV     3            7
+
+No diagnosis for q5 -  7
+
+# Part 2 Signatures box, i am not a us person
+
+#       Wins        Losses
+Reducto 0           3
+Gemini  1           2
+CMV     3           0
+Unclear 0
+
+Reducto + gemini looking at Signed at state issue 2
+
+# Part 2 Signatures
+
+#       Wins        Losses
+Reducto 4           3
+Gemini  5           2
+CMV     3           4
+Unclear 0
+
+# Section A Business Information Questions 1-6
+
+#       Wins        Losses
+Reducto 2           1
+Gemini  3           0
+CMV     1           2
+
+---
 
 - [x] Review rodrigo pr
 - [x] Verify Gemini results for checkbox majority voting - sent note in intelligence
